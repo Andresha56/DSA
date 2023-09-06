@@ -16,6 +16,3 @@ class LinkedList:
                 print(self.head.data)
                 self.head = self.head.ref
 
-
-student1=LinkedList()
-student1.printLL()
