@@ -11,13 +11,15 @@ class LinkedList:
     # ---------- Traversing a linked----------
 
     def printLL(self):
-        if (self.head == None):
-            print("LinedList is empty")
+        if self.head is None:
+          print("Linked list is empty")
         else:
-            while self.head is not None:
-                print(self.head.data,   " " , "=>" ,end="")
-                self.head = self.head.ref
-
+            current=self.head
+            while  current is not None:
+                print(current.data, " " , " => " , " " ,end="")
+                current=current.ref
+        
+        
     # ------add element--at --begin---
 
     def add_element_at_begin(self, data):
